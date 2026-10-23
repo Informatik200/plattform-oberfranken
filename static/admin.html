@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Redaktion · oberfranken.de Prototyp</title>
+<link rel="stylesheet" href="/static/fonts/admin-fonts.css">
+<link rel="stylesheet" href="/static/admin.css">
+<style>
+[hidden]{display:none!important}
+.login{min-height:100vh;display:grid;place-items:center;padding:24px}
+.login form{width:100%;max-width:420px}
+.logline{font-family:var(--font-mono);font-size:13px;white-space:pre-wrap;background:var(--sunk);border-radius:9px;padding:12px;margin:0;max-height:260px;overflow:auto}
+textarea.field{resize:vertical;font-family:var(--font-body)}
+.side .logo .mark{background:var(--accent)}
+</style>
+</head>
+<body>
+<div class="login" id="v-login">
+  <form class="panel" id="login-form">
+    <p class="eyebrow">oberfranken.de · Prototyp</p>
+    <h1 style="font-size:26px">Anmeldung für Redaktion &amp; Partner</h1>
+    <p class="muted small">Nur für die Redaktion. Mit dem Standard-Passwort aus der Anleitung geht die Anmeldung nur am eigenen Rechner (localhost), nicht über den geteilten Link.</p>
+    <div><label class="lbl" for="l-user">E-Mail</label><input class="field" id="l-user" type="email" autocomplete="username"></div>
+    <div><label class="lbl" for="l-pass">Passwort</label><input class="field" id="l-pass" type="password" autocomplete="current-password"></div>
+    <button class="btn primary block" type="submit">Anmelden</button>
+    <p class="note" id="l-msg"></p>
+    <a class="note" href="/">← Zur Nutzerseite</a>
+  </form>
+</div>
+<div class="app" id="v-app" hidden>
+  <aside class="side">
+    <div class="logo"><span class="mark" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 20 20"><path d="M10 2l2 5.5 5.5 2-5.5 2L10 17l-2-5.5L2.5 9.5l5.5-2z" fill="#fff"/></svg></span><span class="name">Redaktion</span></div>
+    <nav class="snav" id="snav" aria-label="Redaktion"></nav>
+    <div class="me"><span class="avatar" style="width:34px;height:34px;display:grid;place-items:center;font-weight:700;color:var(--accent)">R</span><span class="who"><b>Team Oberfranken</b><span>angemeldet</span></span></div>
+  </aside>
+  <main class="content" id="content"></main>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="/static/admin.js"></script>
+</body>
+</html>

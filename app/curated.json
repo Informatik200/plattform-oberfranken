@@ -1,0 +1,73 @@
+[
+  {
+    "id": "willkommen",
+    "slot": "start",
+    "title": "Willkommen in Oberfranken!",
+    "text": "Fränkische Schweiz, Fichtelgebirge, Frankenwald, Obermain und die Städte dazwischen: Hier findest du, was in der Region los ist, gesammelt aus vielen Quellen und passend zu dir."
+  },
+  {
+    "id": "rad",
+    "slot": "start",
+    "title": "Mit dem Rad durch Oberfranken",
+    "text": "Flusstäler, Mittelgebirge und Biergärten: Oberfranken ist eine Radregion. Die Tipps darunter sucht die KI automatisch aus den Regionalseiten zusammen."
+  },
+  {
+    "id": "innovation",
+    "slot": "start",
+    "title": "Oberfranken ist Innovationsregion",
+    "text": "Beim Wettbewerb „Innovator des Jahres 2025“ wurden sechs Innovationen aus Oberfranken ausgezeichnet. Zwei der drei Publikumspreise gingen an die Hochschule Coburg (KaliBot) und die Uni Bamberg (KMU-KI-Erfahrungszentrum).",
+    "link": "https://www.oberfranken.de/wAssets/docs/pressemitteilungen/2025/Nr.-19-25-11-15_Uni-Bamberg-und-Hochschule-Coburg-als-Innovatoren-des-Jahres-ausgezeichnet.pdf",
+    "source": "Oberfranken Offensiv e.V., Pressemitteilung Nr. 19/2025 vom 15.11.2025"
+  },
+  {
+    "id": "region-Wunsiedel",
+    "slot": "region",
+    "region": "Wunsiedel",
+    "title": "Fichtelgebirge: Granit, Wald und Weitblick",
+    "text": "Felsenlabyrinthe, Hochmoore und der Fichtelsee: das Fichtelgebirge ist ein Ziel für alle, die draußen unterwegs sind.",
+    "image": "lib/luisenburg.jpg"
+  },
+  {
+    "id": "region-Kronach",
+    "slot": "region",
+    "region": "Kronach",
+    "title": "Frankenwald: Täler, Flößer und Festungen",
+    "text": "Tiefe Täler, die Festung Rosenberg und die Tradition der Flößer prägen den Frankenwald.",
+    "image": "lib/kronach-festung.jpg"
+  },
+  {
+    "id": "region-Lichtenfels",
+    "slot": "region",
+    "region": "Lichtenfels",
+    "title": "Obermain-Jura: Gottesgarten am Main",
+    "text": "Kloster Banz, Vierzehnheiligen und der Staffelberg liegen dicht beieinander am Obermain.",
+    "image": "lib/staffelberg.jpg"
+  },
+  {
+    "id": "wissen-bamberg",
+    "slot": "wissen",
+    "cat": "Stadt & Kultur",
+    "title": "Altstadt statt Alltag",
+    "text": "Bambergs Gassen und die Regnitz zu Fuß entdecken. Zeit für Architektur, kleine Läden und eine Pause am Wasser.",
+    "link": "https://www.bamberg.info",
+    "image": "lib/bamberg-regnitz-s.jpg"
+  },
+  {
+    "id": "wissen-fraenkische",
+    "slot": "wissen",
+    "cat": "Natur & Bewegung",
+    "title": "Raus in die Fränkische Schweiz",
+    "text": "Felsen, weite Aussichten und kleine Orte: Inspiration für einen Tag draußen. Route und Wetter vorab prüfen.",
+    "link": "https://www.fraenkische-schweiz.com",
+    "image": "lib/tuechersfeld-s.jpg"
+  },
+  {
+    "id": "wissen-fichtelgebirge",
+    "slot": "wissen",
+    "cat": "Ruhe & Erholung",
+    "title": "Eine Auszeit im Fichtelgebirge",
+    "text": "Waldwege und frische Luft statt Bildschirmzeit. Passende Wege nach Kondition und Jahreszeit auswählen.",
+    "link": "https://www.fichtelgebirge.bayern",
+    "image": "lib/fichtelsee-s.jpg"
+  }
+]

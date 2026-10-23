@@ -1,0 +1,2 @@
+Fotos liegen in lib/ (frei lizenziert, Wikimedia Commons). Nachweis: app/images.json und Seite #/bildnachweis.
+Eigene Fotos: Datei nach lib/ kopieren (z. B. 1280 px breit) und in app/images.json eintragen (file, caption, region, tags, mood, cats, author, license, source).

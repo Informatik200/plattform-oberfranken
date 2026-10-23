@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>oberfranken · Dein digitaler Wegweiser (Prototyp)</title>
+<meta name="description" content="Dein Oberfranken. Persönlich geplant. Ausflüge, Veranstaltungen und Wissen aus der Region, mit KI-Begleiter und Wetter. Studienprojekt-Prototyp.">
+<meta name="theme-color" content="#B3122E">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="oberfranken · Prototyp">
+<meta property="og:title" content="Dein Oberfranken. Persönlich geplant.">
+<meta property="og:description" content="Frag den KI-Begleiter, plane deinen Ausflug mit Wetter und entdecke, was in der Region los ist. Ohne Konto, ohne Tracking.">
+<meta property="og:image" content="{{BASE}}/static/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="{{BASE}}/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/static/site.css?v={{V}}">
+<script>/* Farbmodus vor dem ersten Zeichnen setzen (kein Aufblitzen) */try{var t=localStorage.getItem('oberfranken-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;if(localStorage.getItem('oberfranken-motion')==='"reduce"')document.documentElement.dataset.motion='reduce';}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#view" id="skip">Zum Inhalt springen</a>
+<nav class="nav" aria-label="Hauptnavigation"><div class="in">
+  <a class="logo" href="#/"><b>oberfranken</b><span>OFFENSIV · DEINE REGION. DEIN WEG.</span></a>
+  <div class="links">
+    <a href="#/" data-go="begleiter">Mein persönlicher Bereich</a>
+    <a href="#/" data-go="wissen">Regionales Wissen</a>
+    <a href="#/" data-go="regionen">Regionen</a>
+    <a href="#/oberfranken">Über Oberfranken</a>
+    <a href="#/" data-go="app">Die App</a>
+  </div>
+  <button class="btn ghost pill theme" id="theme-btn" type="button" aria-label="Farbmodus: Gerät" title="Farbmodus: Gerät">◐</button>
+  <button class="btn ghost pill lang" id="lang-btn" type="button" aria-label="Sprache wechseln / switch language">EN</button>
+  <button class="btn primary pill" id="mein-btn" type="button">Mein Oberfranken</button>
+</div></nav>
+<div class="wrap" id="cookie-slot"></div>
+<div id="view" tabindex="-1"></div>
+<footer><div class="wrap">
+  <div class="oo">
+    <div><b class="oo-name">Ein Projekt von Oberfranken Offensiv e.V.</b><span>Website-Konzept · Studienprojekt der Hochschule Coburg mit BERGWERK</span></div>
+    <div class="oo-links"><a href="https://www.oberfranken.de" target="_blank" rel="noopener">Mitglied werden ↗</a><a href="https://www.oberfranken.de" target="_blank" rel="noopener">Kontakt ↗</a><a href="#/oberfranken">Über Oberfranken &amp; Quellen</a><a href="#/so-funktionierts">So funktioniert's</a><a href="#/leben">Leben &amp; weiterkommen</a><a href="#/partner">Partner werden</a><a href="#/datenschutz">Datenschutz</a><a href="#/bildnachweis">Bildnachweis</a><a href="#/impressum">Impressum &amp; Kontakt</a><a href="#/barrierefreiheit">Barrierefreiheit</a></div>
+  </div>
+  <span>Prototyp mit echten Inhalten aus geprüften Quellen · Keine IP-Speicherung, keine Tracking-Cookies · Studienprojekt, kein offizieller Service.</span>
+  <div class="row">
+    <button class="btn sm" type="button" id="cookie-open">Datenschutz-Einstellungen</button>
+    <label class="note" style="display:inline-flex;gap:6px;align-items:center;cursor:pointer"><input type="checkbox" id="motion-toggle"> Bewegung reduzieren</label>
+    <label class="note" style="display:inline-flex;gap:6px;align-items:center;cursor:pointer"><input type="checkbox" id="srctoggle"> Herkunft zeigen (blau = kuratiert, rot = KI)</label>
+    <a href="/admin">Anmeldung Redaktion &amp; Partner</a>
+  </div>
+</div></footer>
+<nav class="tabbar" aria-label="App-Navigation">
+  <a href="#/" data-tab="start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Start</a>
+  <a href="#/" data-tab="fragen" class="tab-ww" aria-label="„Frag mich“ öffnen"><svg width="26" height="26" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#B3122E"/><rect x="22.6" y="13" width="2.8" height="26" rx="1.4" fill="#FBEAED"/><path d="M12.5 15.5h15.8l4.2 3.6-4.2 3.6H12.5a1 1 0 0 1-1-1v-5.2a1 1 0 0 1 1-1z" fill="#fff"/><path d="M35.5 25.5H19.7l-4.2 3.6 4.2 3.6h15.8a1 1 0 0 0 1-1v-5.2a1 1 0 0 0-1-1z" fill="#F7C9D1"/><path d="M24 4.5l1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#FFD7A3"/></svg>Frag mich</a>
+  <a href="#/karte" data-tab="karte"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z M9 4v14M15 6v14"/></svg>Regionen</a>
+  <a href="#/mein" data-tab="mein"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6C19 16.5 12 21 12 21z"/></svg>Mein</a>
+</nav>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="/static/i18n.js?v={{V}}"></script>
+<script src="/static/app.js?v={{V}}"></script>
+</body>
+</html>

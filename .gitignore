@@ -1,0 +1,16 @@
+# Geheimnisse und lokale Daten
+.env
+data.db
+data.db-*
+data/site_index.json
+*.mmdb
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# System
+.DS_Store
+Thumbs.db
